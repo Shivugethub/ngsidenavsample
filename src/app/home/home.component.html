@@ -1,0 +1,9 @@
+<div class="shadow-lg m-4 p-4 rounded border">
+    <div class="bg-white" *ngFor="let item of dataSource">
+        <p class="text-warning"> <span class="text-dark">Title: </span>{{item.Subject}} </p>
+        <p>
+            <span class="text-dark">StartTime: </span><span class="mr-5">{{item.StartTime | date:"MM/dd/yy"}}</span>
+            <span class="text-dark">EndTime: </span><span>{{item.EndTime | date:"MM/dd/yy"}}</span>
+        </p>
+    </div>
+</div>
